@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+</head>
+
+<body>
+  <main>
+
+    <div class="heading-image">
+      <img src="../images/logo.svg" alt="splitter_logo">
+    </div>
+
+    <div class="container">
+
+      <div class="input_container">
+        <div class="bill_input">
+          <span class="bill_input-subheading">Bill</span>
+          <div class="input_box" id="bill_input-box" contenteditable="true">
+            <img src="../images/icon-dollar.svg" alt="dollar">
+            <span id="bill_amount">142.55</span>
+          </div>
+        </div>
+
+        <div class="tip_input">
+
+          <span class="bill_input-subheading">Select Tip %</span>
+          <span class="tip_value"><a href="" class="tip_button">5%</a></span>
+
+          <span class="tip_value"><a href="" class="tip_button">10%</a></span>
+
+          <span class="tip_value"><a href="" class="tip_button">15%</a></span>
+
+          <span class="tip_value"><a href="" class="tip_button">20%</a></span>
+
+          <span class="tip_value"><a href="" class="tip_button">25%</a></span>
+
+          <span class="tip_value"><a href="" class="tip_button">Custom</a></span>
+        </div>
+
+        <div class="no_of_person_input">
+
+          <span class="bill_input-subheading">Number of Person</span>
+          <div class="input_box" id="no_of_persons_input-box" contenteditable="true">
+            <img src="../images/icon-person.svg" alt="person">
+            <span id="no_of_persons">5</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="calculate_container">
+
+        <div class="per_person" id="tip_amount">
+          <span>Tip Amount / person</span>
+          <span>$4.27</span>
+        </div>
+
+        <div class="per_person" id="total_amount">
+          <span>Total / person</span>
+          <span>$32.79</span>
+        </div>
+
+        <div class="reset_button">
+          <a href="#" class="reset">Reset</a>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+{
+  "name": "tip-calculator-app-main",
+  "version": "1.0.0",
+  "description": "Tip Calculator app",
+  "main": "app.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "sass-watch": "sass --watch scss/app.sass dist/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikeshnaik/tip-calculator-app.git"
+  },
+  "author": "NikeshN",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nikeshnaik/tip-calculator-app/issues"
+  },
+  "homepage": "https://github.com/nikeshnaik/tip-calculator-app#readme",
+  "dependencies": {
+    "sass": "^1.49.9"
+  }
+}
