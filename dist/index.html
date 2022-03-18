@@ -19,66 +19,67 @@
 </head>
 
 <body>
+  <header>
+    <img src="../images/logo.svg" alt="splitter_logo">
+  </header>
   <main>
-
-    <div class="heading-image">
-      <img src="../images/logo.svg" alt="splitter_logo">
-    </div>
 
     <div class="container">
 
-      <div class="input_container">
-        <div class="bill_input">
-          <span class="bill_input-subheading">Bill</span>
-          <div class="input_box" id="bill_input-box" contenteditable="true">
-            <img src="../images/icon-dollar.svg" alt="dollar">
-            <span id="bill_amount">142.55</span>
-          </div>
-        </div>
-
-        <div class="tip_input">
-
-          <span class="bill_input-subheading">Select Tip %</span>
-          <span class="tip_value"><a href="" class="tip_button">5%</a></span>
-
-          <span class="tip_value"><a href="" class="tip_button">10%</a></span>
-
-          <span class="tip_value"><a href="" class="tip_button">15%</a></span>
-
-          <span class="tip_value"><a href="" class="tip_button">20%</a></span>
-
-          <span class="tip_value"><a href="" class="tip_button">25%</a></span>
-
-          <span class="tip_value"><a href="" class="tip_button">Custom</a></span>
-        </div>
-
-        <div class="no_of_person_input">
-
-          <span class="bill_input-subheading">Number of Person</span>
-          <div class="input_box" id="no_of_persons_input-box" contenteditable="true">
-            <img src="../images/icon-person.svg" alt="person">
-            <span id="no_of_persons">5</span>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="calculate_container">
-
-        <div class="per_person" id="tip_amount">
-          <span>Tip Amount / person</span>
-          <span>$4.27</span>
-        </div>
-
-        <div class="per_person" id="total_amount">
-          <span>Total / person</span>
-          <span>$32.79</span>
-        </div>
-
-        <div class="reset_button">
-          <a href="#" class="reset">Reset</a>
+      <div class="container container__bill">
+        <span class="heading_text">Bill</span>
+        <div class="inputbox inputbox__bill" contenteditable="true">
+          <img class="inputbox__icon" src="../images/icon-dollar.svg" alt="dollar">
+          <span id="bill--value">142.55</span>
         </div>
       </div>
+
+      <div class="tip__input">
+
+        <span class="heading_text">Select Tip %</span>
+        <span class="tip"><a href="" class="tip--value">5%</a></span>
+
+        <span class="tip"><a href="" class="tip--value">10%</a></span>
+
+        <span class="tip"><a href="" class="tip--value">15%</a></span>
+
+        <span class="tip"><a href="" class="tip--value">20%</a></span>
+
+        <span class="tip"><a href="" class="tip--value">25%</a></span>
+
+        <span class="tip"><a href="" class="tip--value">Custom</a></span>
+      </div>
+
+      <!-- nop number of person -->
+
+      <div class="container container__noperson">
+
+        <span class="heading_text">Number of Person</span>
+        <div class="inputbox inputbox__nop" contenteditable="true">
+          <img class="inputbox__icon" src="../images/icon-person.svg" alt="person">
+          <span id="nop--value">5</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container container__display">
+
+
+      <div class="tip_amount_person">
+        <span class="tip-amount-person--text">Tip Amount / person</span>
+        <span id="tip-amount-person--value">$4.27</span>
+      </div>
+
+      <div class="total_amount_person">
+        <span class="total_amount_person--text">Total / person</span>
+        <span class="total_amount_person--value">$32.79</span>
+      </div>
+
+      <div class="btn">
+        <a href="#" class="btn__reset">Reset</a>
+      </div>
+    </div>
 
     </div>
 
