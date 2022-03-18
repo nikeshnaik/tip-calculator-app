@@ -1,13 +1,43 @@
 @use "variables";
+@use "components";
 
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: variables.$neutral-Light-grayish-cyan;
-    margin-top: 2rem;
+    margin-top: 3rem;
+    overflow-y: scroll;
+    overflow-x: hidden; /* hides the horizontal scroll bar */
+}
+
+main {
+    margin-top: 3.4rem;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    width: 38.5rem;
+    height: 20rem;
+    border-radius: 0.8rem;
 }
 
 .container {
-    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.container__bill {
+    margin: 1rem 0 -0.1rem 2rem;
+    width: 15rem;
+}
+
+.container__noperson {
+    margin: 1rem 0 0 2rem;
+    width: 15rem;
+}
+
+.container__tip-input {
+    margin: 1rem 0 -0.25rem 2rem;
+    display: flex;
+    flex-direction: column;
 }
