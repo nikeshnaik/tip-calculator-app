@@ -19,12 +19,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+<!-- ![](./screenshot.jpg) -->
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+<!-- - Solution URL: [Add solution URL here](https://your-solution-url.com) -->
+- Live Site URL: [https://distracted-goldwasser-8d3e98.netlify.app/](https://distracted-goldwasser-8d3e98.netlify.app/)
 
 ## My process
 
