@@ -1,0 +1,13 @@
+@use "variables";
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: variables.$neutral-Light-grayish-cyan;
+    margin-top: 2rem;
+}
+
+.container {
+    background-color: white;
+}
