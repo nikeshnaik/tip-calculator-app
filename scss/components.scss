@@ -66,3 +66,40 @@
     text-decoration: none;
     color: white;
 }
+
+.wrapper {
+    // margin: 2.65rem 0 0 1.6rem;
+    font-size: 0.7rem;
+    display: flex;
+    flex-direction: row;
+    gap: 3.65rem;
+    width: 14rem;
+}
+
+.subheading {
+    font-size: 0.65rem;
+    line-height: 0.97rem;
+    font-style: normal;
+    color: variables.$neutral-White;
+}
+
+.value {
+    font-style: normal;
+    font-size: 2rem;
+    position: relative;
+    top: -0.75rem;
+    left: 0.435rem;
+    color: variables.$strong-cyan;
+}
+
+.subtext {
+    font-size: 0.52rem;
+    font-style: normal;
+    line-height: 0.8rem;
+    color: variables.$neutral-Grayish-cyan;
+}
+
+.sub_wrapper {
+    display: flex;
+    flex-direction: column;
+}

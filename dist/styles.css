@@ -1,14 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+@font-face {
+  font-family: "Space Mono Bold";
+  src: url("../fonts/Space_Mono/SpaceMono-Bold.ttf");
+}
 * {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
 }
 
 html {
   font-size: 1.5rem;
-  font-family: "Space Mono", monospace;
+  font-family: "Space Mono Bold";
 }
 
 .inputbox {
@@ -35,7 +36,7 @@ html {
   font-weight: 700;
   font-style: normal;
   line-height: 1.5rem;
-  font-family: "Space Mono", monospace;
+  font-family: "Space Mono Bold";
   color: #00494d;
 }
 
@@ -45,7 +46,7 @@ html {
   font-size: 16px;
   line-height: 23.7px;
   font-style: normal;
-  font-family: "Space Mono", monospace;
+  font-family: "Space Mono Bold";
   color: #7f9c9f;
 }
 
@@ -74,6 +75,42 @@ html {
 .tip--value {
   text-decoration: none;
   color: white;
+}
+
+.wrapper {
+  font-size: 0.7rem;
+  display: flex;
+  flex-direction: row;
+  gap: 3.65rem;
+  width: 14rem;
+}
+
+.subheading {
+  font-size: 0.65rem;
+  line-height: 0.97rem;
+  font-style: normal;
+  color: white;
+}
+
+.value {
+  font-style: normal;
+  font-size: 2rem;
+  position: relative;
+  top: -0.75rem;
+  left: 0.435rem;
+  color: #26c0ab;
+}
+
+.subtext {
+  font-size: 0.52rem;
+  font-style: normal;
+  line-height: 0.8rem;
+  color: #7f9c9f;
+}
+
+.sub_wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 body {
@@ -116,6 +153,17 @@ main {
   margin: 1rem 0 -0.25rem 2rem;
   display: flex;
   flex-direction: column;
+}
+
+.container__display {
+  margin: 1.2rem 0 0 2rem;
+  background-color: #00494d;
+  display: flex;
+  flex-direction: column;
+  width: 17.2rem;
+  height: 17.5rem;
+  padding: 2.5rem 0 0 1.6rem;
+  gap: 1rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
