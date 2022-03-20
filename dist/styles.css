@@ -72,12 +72,26 @@ html {
   border-radius: 0.3rem;
 }
 
+.tip-wrapper:nth-child(3) {
+  background-color: #26c0ab;
+}
+.tip-wrapper:nth-child(3) .tip--value {
+  color: #00494d;
+}
+
+.tip-wrapper:nth-child(6) {
+  background-color: #f4fafa;
+}
+.tip-wrapper:nth-child(6) .tip--value {
+  color: #7f9c9f;
+}
+
 .tip--value {
   text-decoration: none;
   color: white;
 }
 
-.wrapper {
+.display-group {
   font-size: 0.7rem;
   display: flex;
   flex-direction: row;
@@ -85,14 +99,14 @@ html {
   width: 14rem;
 }
 
-.subheading {
+.display-text {
   font-size: 0.65rem;
   line-height: 0.97rem;
   font-style: normal;
   color: white;
 }
 
-.value {
+.calculated--value {
   font-style: normal;
   font-size: 2rem;
   position: relative;
@@ -101,16 +115,33 @@ html {
   color: #26c0ab;
 }
 
-.subtext {
+.text--subtext {
   font-size: 0.52rem;
   font-style: normal;
   line-height: 0.8rem;
   color: #7f9c9f;
 }
 
-.sub_wrapper {
+.display-text {
   display: flex;
   flex-direction: column;
+}
+
+.reset__btn {
+  background-color: #26c0ab;
+  display: flex;
+  justify-content: center;
+  border-radius: 0.3rem;
+  margin: 3.4rem 0 0 -0.01rem;
+}
+
+.btn {
+  padding: 0.4rem;
+  font-size: 0.9rem;
+  line-height: 1.3rem;
+  text-transform: uppercase;
+  font-style: normal;
+  text-decoration: none;
 }
 
 body {
@@ -118,14 +149,14 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: #c5e4e7;
-  margin-top: 3rem;
+  margin-top: 3.3rem;
   overflow-y: scroll;
   overflow-x: hidden;
   /* hides the horizontal scroll bar */
 }
 
 main {
-  margin-top: 3.4rem;
+  margin-top: 3.04rem;
   background-color: white;
   display: flex;
   flex-direction: row;
@@ -137,6 +168,7 @@ main {
 .container {
   display: flex;
   flex-direction: column;
+  margin-top: 0.7rem;
 }
 
 .container__bill {
@@ -145,7 +177,7 @@ main {
 }
 
 .container__noperson {
-  margin: 1rem 0 0 2rem;
+  margin: 1.7rem 0 0 2rem;
   width: 15rem;
 }
 
@@ -156,14 +188,15 @@ main {
 }
 
 .container__display {
-  margin: 1.2rem 0 0 2rem;
+  margin: 1.35rem 0 0 2rem;
   background-color: #00494d;
   display: flex;
   flex-direction: column;
-  width: 17.2rem;
-  height: 17.5rem;
+  width: 15.5rem;
+  height: 15rem;
   padding: 2.5rem 0 0 1.6rem;
   gap: 1rem;
+  border-radius: 0.3rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

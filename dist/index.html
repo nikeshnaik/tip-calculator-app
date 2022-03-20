@@ -26,7 +26,7 @@
 
     <div class="container">
 
-      <div class="container container__bill">
+      <div class="container__bill">
         <span class="heading_text">Bill</span>
         <div class="inputbox inputbox__bill" contenteditable="true">
           <img class="inputbox__icon" src="../images/icon-dollar.svg" alt="dollar">
@@ -38,23 +38,23 @@
 
         <span class="heading_text">Select Tip %</span>
         <div class="tip">
-          <span class="tip-wrapper"><a href="" class="tip--value">5%</a></span>
+          <span class="tip-wrapper"><a href="#" class="tip--value">5%</a></span>
 
-          <span class="tip-wrapper"><a href="" class="tip--value">10%</a></span>
+          <span class="tip-wrapper"><a href="#" class="tip--value">10%</a></span>
 
-          <span class="tip-wrapper"><a href="" class="tip--value">15%</a></span>
+          <span class="tip-wrapper"><a href="#" class="tip--value">15%</a></span>
 
-          <span class="tip-wrapper"><a href="" class="tip--value">25%</a></span>
+          <span class="tip-wrapper"><a href="#" class="tip--value">25%</a></span>
 
-          <span class="tip-wrapper"><a href="" class="tip--value">50%</a></span>
+          <span class="tip-wrapper"><a href="#" class="tip--value">50%</a></span>
 
-          <span class="tip-wrapper"><a href="" class="tip--value">Custom</a></span>
+          <span class="tip-wrapper"> <span class="tip--value" contenteditable="true">Custom</span></span>
         </div>
       </div>
 
       <!-- nop number of person -->
 
-      <div class="container container__noperson">
+      <div class="container__noperson">
 
         <span class="heading_text">Number of People</span>
         <div class="inputbox inputbox__nop" contenteditable="true">
@@ -65,33 +65,31 @@
 
     </div>
 
-    <div class="container container__display">
+    <div class="container__display">
 
 
-      <div class="wrapper">
-        <div class="sub_wrapper">
-          <span class="subheading">Tip Amount</span>
-          <span class="subtext"> / person</span>
+      <div class="display-group">
+        <div class="display-text">
+          <span class="text--subheading">Tip Amount</span>
+          <span class="text--subtext"> / person</span>
         </div>
 
-        <span class="value" id="tip-amount-person--value">$4.27</span>
+        <span class="calculated--value" id="tip-amount-person--value">$4.237</span>
       </div>
 
-      <div class="wrapper">
+      <div class="display-group">
 
-        <div class="sub_wrapper">
-          <span class="subheading">Total</span>
-          <span class="subtext"> / person</span>
+        <div class="display-text">
+          <span class="text--subheading">Total</span>
+          <span class="text--subtext"> / person</span>
         </div>
 
-        <span class="value" id="total_amount_person--value">$32.79</span>
+        <span class="calculated--value" id="total_amount_person--value">$32.79</span>
       </div>
 
-      <div class="btn">
-        <a href="#" class="btn__reset">Reset</a>
+      <div class="reset__btn display-group">
+        <a href="#" class="btn">Reset</a>
       </div>
-    </div>
-
     </div>
 
   </main>
