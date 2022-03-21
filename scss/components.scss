@@ -11,6 +11,7 @@
     max-width: inherit;
     max-height: 1.5rem;
     border-radius: 0.3rem;
+    border: 0.09rem solid transparent;
 }
 
 .inputbox__icon {
@@ -44,26 +45,33 @@
     color: variables.$neutral-Grayish-cyan;
 }
 
+.heading_text--warning {
+    color: variables.$neutral-red;
+    position: relative;
+    left: 2rem;
+    display: none;
+}
+
 .tip {
     width: 15.79rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    row-gap: 0.6rem;
-    column-gap: 0.5rem;
+    row-gap: 0.3rem;
+    column-gap: 0.2rem;
     margin-top: 0.6rem;
 }
 
 .tip-wrapper {
     width: 4.9rem;
-    height: 2rem;
+    height: 1.9rem;
     background-color: variables.$neutral-Very-dark-cyan;
     font-weight: variables.$font-weight;
     display: flex;
     justify-content: center;
     align-items: center;
-
+    border: 0.09rem solid transparent;
     border-radius: 0.3rem;
 }
 

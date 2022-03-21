@@ -1,0 +1,24 @@
+@use "variables";
+
+.inputbox:hover {
+    border: 0.09rem solid variables.$less-stronger-cyan;
+}
+// .inputbox:hover {
+// border: 0.09rem solid $neutral-red;
+// }
+
+.tip-wrapper:nth-child(6):hover {
+    border: 0.09rem solid variables.$less-stronger-cyan;
+}
+
+.reset__btn:active {
+    background-color: variables.$less-stronger-cyan;
+
+    .btn:active {
+        background-color: variables.$less-stronger-cyan;
+    }
+}
+
+.tip-wrapper:active {
+    background-color: variables.$less-stronger-cyan;
+}

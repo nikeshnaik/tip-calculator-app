@@ -23,6 +23,7 @@ html {
   max-width: inherit;
   max-height: 1.5rem;
   border-radius: 0.3rem;
+  border: 0.09rem solid transparent;
 }
 
 .inputbox__icon {
@@ -56,25 +57,33 @@ html {
   color: #7f9c9f;
 }
 
+.heading_text--warning {
+  color: #e17456;
+  position: relative;
+  left: 2rem;
+  display: none;
+}
+
 .tip {
   width: 15.79rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  row-gap: 0.6rem;
-  column-gap: 0.5rem;
+  row-gap: 0.3rem;
+  column-gap: 0.2rem;
   margin-top: 0.6rem;
 }
 
 .tip-wrapper {
   width: 4.9rem;
-  height: 2rem;
+  height: 1.9rem;
   background-color: #00494d;
   font-weight: 700;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 0.09rem solid transparent;
   border-radius: 0.3rem;
 }
 
@@ -205,6 +214,25 @@ main {
   padding: 2.5rem 0 0 1.6rem;
   gap: 1rem;
   border-radius: 0.8rem;
+}
+
+.inputbox:hover {
+  border: 0.09rem solid #a1e8df;
+}
+
+.tip-wrapper:nth-child(6):hover {
+  border: 0.09rem solid #a1e8df;
+}
+
+.reset__btn:active {
+  background-color: #a1e8df;
+}
+.reset__btn:active .btn:active {
+  background-color: #a1e8df;
+}
+
+.tip-wrapper:active {
+  background-color: #a1e8df;
 }
 
 /*# sourceMappingURL=styles.css.map */
