@@ -28,9 +28,9 @@
 
       <div class="container__bill">
         <span class="heading_text">Bill</span>
-        <div class="inputbox inputbox__bill" contenteditable="true">
-          <img class="inputbox__icon" src="../images/icon-dollar.svg" alt="dollar">
-          <span class="input--value" id="bill--value">142.55</span>
+        <div class="inputbox inputbox__bill">
+          <img class="inputbox__icon" src="../images/icon-dollar.svg" alt="dollar" contenteditable="false">
+          <span class="input--value" id="bill--value" contenteditable="true">142.55</span>
         </div>
       </div>
 
@@ -48,7 +48,8 @@
 
           <span class="tip-wrapper"><a href="#" class="tip--value">50%</a></span>
 
-          <span class="tip-wrapper"> <span class="tip--value" contenteditable="true">Custom</span></span>
+          <span class="tip-wrapper"> <span class="tip--value input--value" id="custom-tip"
+              contenteditable="true">Custom</span></span>
         </div>
       </div>
 
@@ -57,9 +58,9 @@
       <div class="container__noperson">
 
         <span class="heading_text">Number of People</span>
-        <div class="inputbox inputbox__nop" contenteditable="true">
-          <img class="inputbox__icon" src="../images/icon-person.svg" alt="person">
-          <span class="input--value" id="nop--value">5</span>
+        <div class="inputbox inputbox__nop">
+          <img class="inputbox__icon" src="../images/icon-person.svg" alt="person" contenteditable="false">
+          <span class="input--value" id="nop--value" contenteditable="true">5</span>
         </div>
       </div>
 
@@ -74,7 +75,7 @@
           <span class="text--subtext"> / person</span>
         </div>
 
-        <span class="calculated--value" id="tip-amount-person--value">$4.237</span>
+        <span class="calculated--value" id="tip-amount-person--value">$4.27</span>
       </div>
 
       <div class="display-group">

@@ -8,7 +8,8 @@
     width: inherit;
     height: 1.5rem;
     background-color: variables.$neutral-Very-light-grayish-cyan;
-
+    max-width: inherit;
+    max-height: 1.5rem;
     border-radius: 0.3rem;
 }
 
@@ -27,6 +28,10 @@
     line-height: 1.5rem;
     font-family: variables.$font-family;
     color: variables.$neutral-Very-dark-cyan;
+    overflow: hidden;
+    max-height: inherit;
+    max-width: inherit;
+    outline: none;
 }
 
 .heading_text {
@@ -134,4 +139,5 @@
     text-transform: uppercase;
     font-style: normal;
     text-decoration: none;
+    color: variables.$neutral-Very-dark-cyan;
 }

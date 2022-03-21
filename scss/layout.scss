@@ -19,6 +19,7 @@ main {
     width: 38.5rem;
     height: 20rem;
     border-radius: 0.8rem;
+    box-shadow: -0.1rem -0.1rem 2rem -0.2rem variables.$neutral-Grayish-cyan;
 }
 
 .container {
@@ -48,9 +49,9 @@ main {
     background-color: variables.$neutral-Very-dark-cyan;
     display: flex;
     flex-direction: column;
-    width: 15.5rem;
+    width: 16rem;
     height: 15rem;
     padding: 2.5rem 0 0 1.6rem;
     gap: 1rem;
-    border-radius: 0.3rem;
+    border-radius: 0.8rem;
 }
