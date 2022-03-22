@@ -17,10 +17,9 @@ html {
   flex-direction: row;
   justify-content: space-between;
   padding: 0.2rem;
-  width: inherit;
-  height: 1.5rem;
-  background-color: #f4fafa;
   max-width: inherit;
+  min-height: 1.5rem;
+  background-color: #f4fafa;
   max-height: 1.5rem;
   border-radius: 0.3rem;
   border: 0.09rem solid transparent;
@@ -50,8 +49,8 @@ html {
 .heading_text {
   margin: 1rem 0 0 0;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 23.7px;
+  font-size: 0.7rem;
+  line-height: 0.97rem;
   font-style: normal;
   font-family: "Space Mono Bold";
   color: #7f9c9f;
@@ -65,18 +64,18 @@ html {
 }
 
 .tip {
-  width: 15.79rem;
+  max-width: 15.6rem;
+  min-width: inherit;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
   row-gap: 0.3rem;
-  column-gap: 0.2rem;
   margin-top: 0.6rem;
 }
 
 .tip-wrapper {
-  width: 4.9rem;
+  width: 4rem;
   height: 1.9rem;
   background-color: #00494d;
   font-weight: 700;
@@ -110,8 +109,9 @@ html {
   font-size: 0.7rem;
   display: flex;
   flex-direction: row;
-  gap: 3.65rem;
-  width: 14rem;
+  column-gap: 3.65rem;
+  max-width: 14rem;
+  min-width: 5rem;
 }
 
 .display-text {
@@ -137,9 +137,11 @@ html {
   color: #7f9c9f;
 }
 
-.display-text {
-  display: flex;
-  flex-direction: column;
+.text--subheading {
+  font-style: normal;
+  line-height: 0.8rem;
+  color: white;
+  white-space: nowrap;
 }
 
 .reset__btn {
@@ -176,8 +178,9 @@ main {
   background-color: white;
   display: flex;
   flex-direction: row;
-  width: 38.5rem;
-  height: 20rem;
+  width: fit-content;
+  height: fit-content;
+  padding: 0 1.7rem 1.5rem 1rem;
   border-radius: 0.8rem;
   box-shadow: -0.1rem -0.1rem 2rem -0.2rem #7f9c9f;
 }
@@ -189,33 +192,51 @@ main {
 }
 
 .container__bill {
-  margin: 1rem 0 -0.1rem 2rem;
-  width: 15rem;
+  margin: 0.8rem 0 -0.1rem 1rem;
+  max-width: 15rem;
+  min-width: 5rem;
 }
 
 .container__noperson {
-  margin: 1.7rem 0 0 2rem;
-  width: 15rem;
+  margin: 1.2rem 0 0 1rem;
+  max-width: 15rem;
+  min-width: 5rem;
 }
 
 .container__tip-input {
-  margin: 1rem 0 -0.25rem 2rem;
+  margin: 0.1rem 0 -0.25rem 1rem;
   display: flex;
   flex-direction: column;
 }
 
 .container__display {
-  margin: 1.35rem 0 0 2rem;
+  margin: 2rem 0 0 1rem;
   background-color: #00494d;
   display: flex;
   flex-direction: column;
-  width: 16rem;
-  height: 15rem;
-  padding: 2.5rem 0 0 1.6rem;
-  gap: 1rem;
+  width: fit-content;
+  height: fit-content;
+  padding: 1.5rem;
   border-radius: 0.8rem;
 }
 
+@media (max-width: 720px) {
+  html {
+    font-size: 1rem;
+  }
+
+  main {
+    margin-top: 3.04rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    padding: 0 1.7rem 1.5rem 1rem;
+    border-radius: 0.8rem;
+    box-shadow: -0.1rem -0.1rem 2rem -0.2rem #7f9c9f;
+  }
+}
 .inputbox:hover {
   border: 0.09rem solid #a1e8df;
 }

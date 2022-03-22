@@ -16,8 +16,9 @@ main {
     background-color: white;
     display: flex;
     flex-direction: row;
-    width: 38.5rem;
-    height: 20rem;
+    width: fit-content;
+    height: fit-content;
+    padding: 0 1.7rem 1.5rem 1rem;
     border-radius: 0.8rem;
     box-shadow: -0.1rem -0.1rem 2rem -0.2rem variables.$neutral-Grayish-cyan;
 }
@@ -29,29 +30,52 @@ main {
 }
 
 .container__bill {
-    margin: 1rem 0 -0.1rem 2rem;
-    width: 15rem;
+    margin: 0.8rem 0 -0.1rem 1rem;
+    max-width: 15rem;
+    min-width: 5rem;
 }
 
 .container__noperson {
-    margin: 1.7rem 0 0 2rem;
-    width: 15rem;
+    margin: 1.2rem 0 0 1rem;
+    max-width: 15rem;
+    min-width: 5rem;
 }
 
 .container__tip-input {
-    margin: 1rem 0 -0.25rem 2rem;
+    margin: 0.1rem 0 -0.25rem 1rem;
     display: flex;
     flex-direction: column;
 }
 
 .container__display {
-    margin: 1.35rem 0 0 2rem;
+    margin: 2rem 0 0 1rem;
     background-color: variables.$neutral-Very-dark-cyan;
     display: flex;
     flex-direction: column;
-    width: 16rem;
-    height: 15rem;
-    padding: 2.5rem 0 0 1.6rem;
-    gap: 1rem;
+    width: fit-content;
+    height: fit-content;
+    padding: 1.5rem;
     border-radius: 0.8rem;
+}
+
+// - Mobile: 375px
+// - Desktop: 1440px
+
+@media (max-width: 720px) {
+    $font_size: 1rem;
+    html {
+        font-size: $font_size;
+    }
+
+    main {
+        margin-top: 3.04rem;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        height: fit-content;
+        padding: 0 1.7rem 1.5rem 1rem;
+        border-radius: 0.8rem;
+        box-shadow: -0.1rem -0.1rem 2rem -0.2rem variables.$neutral-Grayish-cyan;
+    }
 }
