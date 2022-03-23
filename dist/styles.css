@@ -64,18 +64,17 @@ html {
 }
 
 .tip {
-  max-width: 15.6rem;
-  min-width: inherit;
+  width: 15.79rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  row-gap: 0.3rem;
+  justify-content: space-between;
   margin-top: 0.6rem;
+  row-gap: 0.6rem;
 }
 
 .tip-wrapper {
-  width: 4rem;
+  width: 5rem;
   height: 1.9rem;
   background-color: #00494d;
   font-weight: 700;
@@ -106,6 +105,7 @@ html {
 }
 
 .display-group {
+  margin-top: 0.88rem;
   font-size: 0.7rem;
   display: flex;
   flex-direction: row;
@@ -119,6 +119,7 @@ html {
   line-height: 0.97rem;
   font-style: normal;
   color: white;
+  margin-top: -0.1rem;
 }
 
 .calculated--value {
@@ -135,6 +136,7 @@ html {
   font-style: normal;
   line-height: 0.8rem;
   color: #7f9c9f;
+  white-space: nowrap;
 }
 
 .text--subheading {
@@ -149,7 +151,7 @@ html {
   display: flex;
   justify-content: center;
   border-radius: 0.3rem;
-  margin: 3.4rem 0 0 -0.01rem;
+  margin: 4rem 0 0 -0.01rem;
 }
 
 .btn {
@@ -167,20 +169,21 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: #c5e4e7;
-  margin-top: 3.3rem;
+  margin-top: 3.6rem;
   overflow-y: scroll;
   overflow-x: hidden;
   /* hides the horizontal scroll bar */
 }
 
 main {
-  margin-top: 3.04rem;
+  margin-top: 3.3rem;
   background-color: white;
   display: flex;
   flex-direction: row;
-  width: fit-content;
+  width: 35.42rem;
+  max-width: 35.42rem;
   height: fit-content;
-  padding: 0 1.7rem 1.5rem 1rem;
+  padding: 0 1.7rem 1.3rem 1rem;
   border-radius: 0.8rem;
   box-shadow: -0.1rem -0.1rem 2rem -0.2rem #7f9c9f;
 }
@@ -192,31 +195,29 @@ main {
 }
 
 .container__bill {
-  margin: 0.8rem 0 -0.1rem 1rem;
-  max-width: 15rem;
+  margin: 0.8rem 0 0 1rem;
+  width: 15rem;
   min-width: 5rem;
 }
 
 .container__noperson {
-  margin: 1.2rem 0 0 1rem;
-  max-width: 15rem;
+  margin: 1.7rem 0 0 0.7rem;
+  width: 15rem;
   min-width: 5rem;
 }
 
 .container__tip-input {
-  margin: 0.1rem 0 -0.25rem 1rem;
+  margin: 0.8rem 0 -0.25rem 0.8rem;
   display: flex;
   flex-direction: column;
 }
 
 .container__display {
-  margin: 2rem 0 0 1rem;
+  margin: 1.4rem 0 0 2.23rem;
   background-color: #00494d;
   display: flex;
   flex-direction: column;
-  width: fit-content;
-  height: fit-content;
-  padding: 1.5rem;
+  padding: 1.69rem;
   border-radius: 0.8rem;
 }
 
@@ -235,6 +236,10 @@ main {
     padding: 0 1.7rem 1.5rem 1rem;
     border-radius: 0.8rem;
     box-shadow: -0.1rem -0.1rem 2rem -0.2rem #7f9c9f;
+  }
+
+  .container__display {
+    margin-left: 0rem;
   }
 }
 .inputbox:hover {
