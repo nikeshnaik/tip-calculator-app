@@ -73,21 +73,6 @@
     border-radius: 0.3rem;
 }
 
-.tip-wrapper:nth-child(3) {
-    background-color: variables.$strong-cyan;
-
-    .tip--value {
-        color: variables.$neutral-Very-dark-cyan;
-    }
-}
-
-.tip-wrapper:nth-child(6) {
-    background-color: variables.$neutral-Very-light-grayish-cyan;
-    .tip--value {
-        color: variables.$neutral-Grayish-cyan;
-    }
-}
-
 .tip--value {
     text-decoration: none;
     color: white;

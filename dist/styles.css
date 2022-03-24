@@ -85,20 +85,6 @@ html {
   border-radius: 0.3rem;
 }
 
-.tip-wrapper:nth-child(3) {
-  background-color: #26c0ab;
-}
-.tip-wrapper:nth-child(3) .tip--value {
-  color: #00494d;
-}
-
-.tip-wrapper:nth-child(6) {
-  background-color: #f4fafa;
-}
-.tip-wrapper:nth-child(6) .tip--value {
-  color: #7f9c9f;
-}
-
 .tip--value {
   text-decoration: none;
   color: white;
@@ -258,8 +244,18 @@ main {
   background-color: #a1e8df;
 }
 
-.tip-wrapper:active {
-  background-color: #a1e8df;
+.tip-wrapper:focus-within {
+  background-color: #26c0ab;
+}
+.tip-wrapper:focus-within .tip--value:focus-within {
+  color: #00494d;
+}
+
+.tip-wrapper:nth-child(6) {
+  background-color: #f4fafa;
+}
+.tip-wrapper:nth-child(6) .tip--value {
+  color: #7f9c9f;
 }
 
 /*# sourceMappingURL=styles.css.map */

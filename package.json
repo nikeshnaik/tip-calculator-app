@@ -9,7 +9,8 @@
   "scripts": {
     "sass-watch": "sass --watch scss/app.scss dist/styles.css",
     "rollup-watch": "rollup js/app.js --file dist/bundle.js --format es --watch",
-    "build": "sass scss/app.scss dist/styles.css && rollup js/app.js --file dist/bundle.js --format es"
+    "build": "sass scss/app.scss dist/styles.css && rollup js/app.js --file dist/bundle.js --format es",
+    "dev": "npm run sass-watch && npm run rollup-watch"
   },
   "repository": {
     "type": "git",
