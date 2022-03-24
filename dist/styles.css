@@ -167,6 +167,7 @@ html {
 body {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   background-color: #c5e4e7;
   margin-top: 3.6rem;
@@ -239,7 +240,7 @@ main {
   }
 
   .container__display {
-    margin-left: 0rem;
+    margin-left: -0.000002rem;
   }
 }
 .inputbox:hover {

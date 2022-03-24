@@ -4,6 +4,7 @@
 body {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     background-color: variables.$neutral-Light-grayish-cyan;
     margin-top: 3.6rem;

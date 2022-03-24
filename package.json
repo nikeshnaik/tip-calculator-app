@@ -7,7 +7,9 @@
     "doc": "docs"
   },
   "scripts": {
-    "sass-watch": "sass --watch scss/app.scss dist/styles.css"
+    "sass-watch": "sass --watch scss/app.scss dist/styles.css",
+    "rollup-watch": "rollup js/app.js --file dist/bundle.js --format es --watch",
+    "build": "sass scss/app.scss dist/styles.css && rollup js/app.js --file dist/bundle.js --format es"
   },
   "repository": {
     "type": "git",
