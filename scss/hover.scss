@@ -1,12 +1,12 @@
 @use "variables";
 
-.inputbox:hover {
+.inputbox__bill:hover {
     border: 0.09rem solid variables.$less-stronger-cyan;
 }
 
-// .inputbox:hover {
-//     border: 0.09rem solid variables.$neutral-red;
-// }
+.inputbox__nop_hover {
+    border: 0.09rem solid variables.$neutral-red;
+}
 
 .tip-wrapper:nth-child(6):hover {
     border: 0.09rem solid variables.$less-stronger-cyan;
@@ -20,11 +20,11 @@
     }
 }
 
-.tip-wrapper:focus {
+.tip-wrapper--focus {
     background-color: variables.$strong-cyan;
-    .tip--value:focus-within {
-        color: variables.$neutral-Very-dark-cyan;
-    }
+    // .tip--value--focus {
+    //     color: variables.$neutral-Very-dark-cyan;
+    // }
 }
 
 .tip-wrapper:nth-child(6) {

@@ -229,8 +229,12 @@ main {
     margin-left: -0.000002rem;
   }
 }
-.inputbox:hover {
+.inputbox__bill:hover {
   border: 0.09rem solid #a1e8df;
+}
+
+.inputbox__nop_hover {
+  border: 0.09rem solid #e17456;
 }
 
 .tip-wrapper:nth-child(6):hover {
@@ -244,11 +248,8 @@ main {
   background-color: #a1e8df;
 }
 
-.tip-wrapper:focus-within {
+.tip-wrapper--focus {
   background-color: #26c0ab;
-}
-.tip-wrapper:focus-within .tip--value:focus-within {
-  color: #00494d;
 }
 
 .tip-wrapper:nth-child(6) {

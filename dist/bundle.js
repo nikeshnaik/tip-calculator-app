@@ -78,6 +78,8 @@ class View {
 
         this.reset_button = document.getElementsByClassName("btn")[0];
 
+        this.tip_active_class = document.getElementsByClassName("tip-wrapper--focus");
+
 
     }
 
@@ -117,7 +119,6 @@ class View {
         this.no_persons_value.addEventListener("click", (event) => {
 
             this.no_persons_value.textContent = "";
-            this.NoOfPeopleLessThanZero();
 
         });
 
@@ -133,20 +134,7 @@ class View {
     }
 
 
-    NoOfPeopleLessThanZero() {
 
-        console.log(this.no_persons_value.textContent);
-
-        if (this.no_persons_value.textContent === "0" || this.no_persons_value.textContent == "") {
-
-            this.no_persons_warning.style.display = "inline";
-
-        }
-        else {
-            this.no_persons_value.style.display = "none";
-        }
-
-    }
 
 
     BindSetBill(handler) {
@@ -164,6 +152,26 @@ class View {
         this.tip_container.addEventListener("click", event => {
 
             let tip_percentage = event.target.textContent;
+            console.log("tip-wrapper" in event.target.classList);
+            console.log(event.target);
+            console.log(event.currentTarget);
+
+            // Removes all highlight active class
+            if (this.tip_active_class.length > 0) {
+                this.tip_active_class[0].classList.remove("tip-wrapper--focus");
+            }
+
+            // Adds highlight class based on condition
+            if ("tip-wrapper" === event.target.className) {
+
+                event.target.classList.add("tip-wrapper--focus");
+            }
+            else if ("tip-wrapper" == event.target.parentElement.className) {
+
+                event.target.parentElement.classList.add("tip-wrapper--focus");
+            }
+
+
 
             handler(tip_percentage);
 
@@ -177,10 +185,24 @@ class View {
 
         this.no_persons_value.addEventListener("input", event => {
 
-            handler(this.no_persons_value.textContent);
+            if (parseInt(this.no_persons_value.textContent) <= 0 || this.no_persons_value.textContent === "") {
 
-        });
+                this.no_persons_warning.style.display = "inline";
+                this.no_persons_value.parentElement.classList.add("inputbox__nop_hover");
 
+            }
+            else {
+                this.no_persons_warning.style.display = "none";
+                this.no_persons_value.parentElement.classList.remove("inputbox__nop_hover");
+
+                handler(this.no_persons_value.textContent);
+            }
+
+        }
+
+
+
+        );
     }
 
     BindReset(handler) {
@@ -192,6 +214,10 @@ class View {
             this.tip_amount_person_value.textContent = "$0";
             this.total_amount_person_value.textContent = "$0";
             this.no_persons_warning.style.display = "none";
+
+            if (this.tip_active_class.length > 0) {
+                this.tip_active_class[0].classList.remove("tip-wrapper--focus");
+            }
 
             handler();
 
@@ -206,6 +232,7 @@ class View {
     UpdateTotalAmountPerPerson(total_amount_per_person) {
         this.total_amount_person_value.textContent = "$" + total_amount_per_person.toString();
     }
+
 
 }
 
