@@ -20,7 +20,7 @@
     }
 }
 
-.tip-wrapper:focus-within {
+.tip-wrapper:focus {
     background-color: variables.$strong-cyan;
     .tip--value:focus-within {
         color: variables.$neutral-Very-dark-cyan;
