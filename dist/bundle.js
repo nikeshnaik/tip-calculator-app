@@ -80,7 +80,6 @@ class View {
 
         this.tip_active_class = document.getElementsByClassName("tip-wrapper--focus");
 
-        console.log(this.custom_tip__value);
 
 
     }
@@ -145,6 +144,7 @@ class View {
 
         this.bill_value.addEventListener("input", event => {
 
+
             handler(this.bill_value.textContent);
 
         });
@@ -205,6 +205,7 @@ class View {
 
         this.no_persons_value.addEventListener("input", event => {
 
+
             if (parseInt(this.no_persons_value.textContent) <= 0 || this.no_persons_value.textContent === "") {
 
                 this.no_persons_warning.style.display = "inline";
@@ -245,11 +246,28 @@ class View {
 
 
     UpdateTipAmountPerPerson(tip_amount_per_person) {
-        this.tip_amount_person_value.textContent = "$" + numeral(tip_amount_per_person).format("0.00a");
+
+        if (tip_amount_per_person === 0) {
+
+            this.tip_amount_person_value.textContent = "$0";
+
+        }
+        else {
+
+            this.tip_amount_person_value.textContent = "$" + numeral(tip_amount_per_person).format("0.00a");
+        }
     }
 
     UpdateTotalAmountPerPerson(total_amount_per_person) {
-        this.total_amount_person_value.textContent = "$" + numeral(total_amount_per_person).format("0.00a");
+
+        if (total_amount_per_person === 0) {
+            this.total_amount_per_person.textContent = "$0";
+        }
+        else {
+
+
+            this.total_amount_person_value.textContent = "$" + numeral(total_amount_per_person).format("0.00a");
+        }
     }
 
 
