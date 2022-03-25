@@ -17,6 +17,7 @@ html {
   flex-direction: row;
   justify-content: space-between;
   padding: 0.2rem;
+  width: 15.2rem;
   max-width: inherit;
   min-height: 1.5rem;
   background-color: #f4fafa;
