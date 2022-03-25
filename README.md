@@ -35,6 +35,10 @@ Users should be able to:
 
 1. Built HTML Structure using BEM
 2. Structure Layout with top level CSS rules.
+3. Use Pixel Perfect to make design as close to requirements.
+4. Start with figuring out eventlisteners, connect eventlisteners to display.
+5. Use architecture to design JS else soon it will become mess.
+
 
 ### Built with
 
@@ -42,16 +46,18 @@ Users should be able to:
 - Using Sass for CSS
 - Flexbox
 - Mobile-first workflow
-- JS Modules and build system
+- JS Modules and Rollup JS ES build system
 
 ### What I learned 
 
 1. SCSS is better than Sass interms of syntax and comptaible with CSS.
 2. Block-Element-Modifier is difficult to maintain when tree goes too deep.
-
-### Continued development
+3. Javascript add and remove classses has its own difficulties
 
 
 ### Useful resources
 
-## Author
+1. https://www.taniarascia.com/javascript-mvc-todo-app/
+2. https://www.preethikasireddy.com/post/javascript-modules-a-beginners-guide
+3. https://sass-lang.com/documentation
+
