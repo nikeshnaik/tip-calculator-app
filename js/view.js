@@ -17,7 +17,7 @@ class View {
 
         this.total_amount_person_value = document.getElementById("total_amount_person--value")
 
-        this.reset_button = document.getElementsByClassName("btn")[0];
+        this.reset_button = document.getElementsByClassName("reset__btn")[0];
 
         this.tip_active_class = document.getElementsByClassName("tip-wrapper--focus");
 
