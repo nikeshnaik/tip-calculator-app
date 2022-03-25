@@ -17,13 +17,18 @@ Users should be able to:
 
 > npm run sass-watch
 
+> npm run rollup-watch
+
+> npm run build
+
 ### Screenshot
 
-<!-- ![](./screenshot.jpg) -->
+![Desktop Screenshot](./final_screenshot_desktop.jpg)
+
+![Mobile Screenshot](./mobile_Design.jpg)
 
 ### Links
 
-<!-- - Solution URL: [Add solution URL here](https://your-solution-url.com) -->
 - Live Site URL: [https://distracted-goldwasser-8d3e98.netlify.app/](https://distracted-goldwasser-8d3e98.netlify.app/)
 
 ## My process
