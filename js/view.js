@@ -21,6 +21,8 @@ class View {
 
         this.tip_active_class = document.getElementsByClassName("tip-wrapper--focus");
 
+        console.log(this.custom_tip__value)
+
 
     }
 
@@ -39,6 +41,8 @@ class View {
         })
 
         this.custom_tip__value.addEventListener("click", (event) => {
+
+            console.log("HEre")
 
             if (this.custom_tip__value.textContent !== "Custom") {
 
@@ -123,6 +127,21 @@ class View {
 
 
 
+    BindGetCustomTip(handler) {
+
+        this.custom_tip__value.addEventListener("input", event => {
+
+            let tip_percentage = this.custom_tip__value.textContent
+
+            handler(tip_percentage)
+
+        })
+
+
+    }
+
+
+
     BindSetNo_Of_People(handler) {
 
         this.no_persons_value.addEventListener("input", event => {
@@ -141,7 +160,6 @@ class View {
             }
 
         }
-
 
 
         )
@@ -177,6 +195,7 @@ class View {
 
 
 }
+
 
 export default View;
 

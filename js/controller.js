@@ -15,6 +15,8 @@ class Controller {
 
         this.view.BindReset(this.handleReset)
 
+        this.view.BindGetCustomTip(this.handleSetTip)
+
 
     }
 
