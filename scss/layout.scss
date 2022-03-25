@@ -62,9 +62,8 @@ main {
 // - Desktop: 1440px
 
 @media (max-width: 720px) {
-    $font_size: 1rem;
     html {
-        font-size: $font_size;
+        font-size: 1rem;
     }
 
     main {

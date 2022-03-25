@@ -96,8 +96,10 @@ html {
   display: flex;
   flex-direction: row;
   column-gap: 3.65rem;
+  width: 14rem;
   max-width: 14rem;
   min-width: 5rem;
+  justify-content: space-between;
 }
 
 .display-text {
@@ -106,30 +108,30 @@ html {
   font-style: normal;
   color: white;
   margin-top: -0.1rem;
+  white-space: nowrap;
 }
 
 .calculated--value {
   font-style: normal;
   font-size: 2rem;
-  position: relative;
-  top: -0.75rem;
-  left: 0.435rem;
   color: #26c0ab;
+  position: relative;
+  top: -0.3rem;
+  overflow-x: auto;
 }
 
 .text--subtext {
+  display: block;
   font-size: 0.52rem;
   font-style: normal;
   line-height: 0.8rem;
   color: #7f9c9f;
-  white-space: nowrap;
 }
 
 .text--subheading {
   font-style: normal;
   line-height: 0.8rem;
   color: white;
-  white-space: nowrap;
 }
 
 .reset__btn {

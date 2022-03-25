@@ -181,6 +181,7 @@ class View {
     }
 
 
+
     BindSetNo_Of_People(handler) {
 
         this.no_persons_value.addEventListener("input", event => {
@@ -226,11 +227,11 @@ class View {
 
 
     UpdateTipAmountPerPerson(tip_amount_per_person) {
-        this.tip_amount_person_value.textContent = "$" + tip_amount_per_person.toString();
+        this.tip_amount_person_value.textContent = "$" + numeral(tip_amount_per_person).format("0.00a");
     }
 
     UpdateTotalAmountPerPerson(total_amount_per_person) {
-        this.total_amount_person_value.textContent = "$" + total_amount_per_person.toString();
+        this.total_amount_person_value.textContent = "$" + numeral(total_amount_per_person).format("0.00a");
     }
 
 
@@ -252,6 +253,7 @@ class Controller {
         this.view.BindSetNo_Of_People(this.handleNoOfPeople);
 
         this.view.BindReset(this.handleReset);
+
 
     }
 

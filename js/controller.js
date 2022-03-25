@@ -15,6 +15,7 @@ class Controller {
 
         this.view.BindReset(this.handleReset)
 
+
     }
 
     handleSetBill = (bill_value) => {
